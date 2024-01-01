@@ -39,15 +39,6 @@
                             <span class="fw-bold d-block">Email : </span>
                             <a href="mailto:{{ auth()->user()->email }}">{{ auth()->user()->email }}</a>
                         </li>
-                        <li class="mb-1">
-                            <span class="fw-bold d-block">No. Telp : </span>
-                            <a href="tel:{{ auth()->user()->phone }}">{{ auth()->user()->phone }}</a>
-                        </li>
-                        <li class="mb-1">
-                            <span class="fw-bold d-block">Bergabung Pada : </span>
-                            <span>{{ auth()->user()->created_at->diffForHumans() }} ({{
-                                auth()->user()->created_at->format('d M Y') }})</span>
-                        </li>
                     </ul>
                 </div>
             </div>

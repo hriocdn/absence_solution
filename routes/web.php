@@ -9,6 +9,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PositionController;
 use App\Http\Controllers\PresenceController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ChangePasswordController;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
@@ -64,7 +65,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/absensi/{attendance}', [HomeController::class, 'show'])->name('show');
         Route::get('/absensi/{attendance}/permission', [HomeController::class, 'permission'])->name('permission');
     });
-
+    
     Route::delete('/logout', [AuthController::class, 'logout'])->name('auth.logout');
 });
 

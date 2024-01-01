@@ -12,8 +12,8 @@
     @if ($attendance->data->is_start && !$data['is_has_enter_today'])
     <button class="btn btn-primary px-3 py-2 btn-sm fw-bold d-block w-100 mb-2" data-bs-toggle="modal"
         data-bs-target="#qrcode-scanner-modal" data-is-enter="1">Scan QRCode Masuk</button>
-    <a href="{{ route('home.permission', $attendance->id) }}"
-        class="btn btn-info px-3 py-2 btn-sm fw-bold d-block w-100">Izin</a>
+    <!-- <a href="{{ route('home.permission', $attendance->id) }}"
+        class="btn btn-info px-3 py-2 btn-sm fw-bold d-block w-100">Izin</a> -->
     @endif
 
     @if ($data['is_has_enter_today'])

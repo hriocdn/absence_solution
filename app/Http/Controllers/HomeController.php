@@ -21,7 +21,7 @@ class HomeController extends Controller
             ->sortByDesc('data.is_start');
 
         return view('home.index', [
-            "title" => "Beranda",
+            "title" => "Home",
             "attendances" => $attendances
         ]);
     }
